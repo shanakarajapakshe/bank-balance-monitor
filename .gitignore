@@ -1,0 +1,38 @@
+# Android Studio / IntelliJ
+.idea/
+*.iml
+local.properties
+
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Signing and secrets
+*.jks
+*.keystore
+keystore.properties
+secrets.properties
+*.env
+.env*
+
+# APKs and bundles
+*.apk
+*.aab
+*.ap_
+
+# Native / generated output
+.cxx/
+.externalNativeBuild/
+captures/
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Local app data and exports
+*.db
+*.sqlite
+*.sqlite3
+sms-export*
+transaction-export*
