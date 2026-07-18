@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f7fb">
+  <title>Bank Balance Monitor — Interactive Demo</title>
+  <meta name="description" content="Interactive browser demo of the Bank Balance Monitor Android app using anonymized sample data.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="showcase">
+    <section class="intro" aria-labelledby="demo-title">
+      <div class="brand-mark" aria-hidden="true"><span></span><i></i><b></b></div>
+      <p class="eyebrow">Interactive product demo</p>
+      <h1 id="demo-title">See your money.<br><em>Clearly.</em></h1>
+      <p class="lead">Explore the Android experience directly in your browser. Switch screens, filter accounts, edit a transaction, and inspect the analytics.</p>
+      <div class="privacy-note"><span>✓</span><p><strong>Safe demo environment</strong><br>Every balance and transaction shown here is fictional.</p></div>
+      <div class="feature-list" aria-label="Demo features">
+        <span>Auto SMS parsing</span><span>Local-first</span><span>Smart categories</span><span>Cash tracking</span>
+      </div>
+      <p class="hint">Use the navigation inside the phone →</p>
+    </section>
+
+    <section class="device-stage" aria-label="Interactive mobile app preview">
+      <div class="device-glow"></div>
+      <div class="phone">
+        <div class="phone-top" aria-hidden="true"><span class="speaker"></span><span class="camera"></span></div>
+        <div class="phone-screen">
+          <div class="status-bar"><strong>9:41</strong><span>◉ ᯤ ▮</span></div>
+          <header class="app-header">
+            <div><h2 id="page-title">Money Monitor</h2><p id="page-subtitle">Your finances, automatically organized</p></div>
+            <button class="refresh" id="refresh" aria-label="Refresh transactions">↻</button>
+          </header>
+          <div class="demo-ribbon"><span></span> Interactive demo · sample data</div>
+          <div class="viewport" id="viewport" tabindex="-1"></div>
+          <nav class="bottom-nav" aria-label="App navigation">
+            <button data-page="home" class="active"><i>⌂</i><span>Home</span></button>
+            <button data-page="transactions"><i>≡</i><span>Transactions</span></button>
+            <button data-page="analytics"><i>◕</i><span>Analytics</span></button>
+            <button data-page="accounts"><i>▣</i><span>Accounts</span></button>
+            <button data-page="settings"><i>⚙</i><span>Settings</span></button>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="modal" hidden>
+    <form class="modal" id="edit-form">
+      <div class="modal-handle"></div>
+      <p class="eyebrow">Edit transaction</p>
+      <h3 id="modal-title">Transaction</h3>
+      <label>Category<select id="edit-category"></select></label>
+      <label>Note<textarea id="edit-note" rows="3" placeholder="Add an optional note"></textarea></label>
+      <div class="modal-actions"><button type="button" class="ghost" id="cancel-edit">Cancel</button><button type="submit" class="primary">Save changes</button></div>
+    </form>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -4,6 +4,12 @@ A privacy-first Android money tracker that converts supported Sri Lankan bank SM
 
 The app automatically records card purchases, deposits, fees, ATM withdrawals, and supported transfers. Transactions remain editable, and no internet permission is included in this public build.
 
+## Live interactive demo
+
+[Open the browser demo](https://shanakarajapakshe.github.io/bank-balance-monitor/)
+
+The demo runs entirely in the browser with fictional sample data. On desktop it appears inside a realistic phone frame; on a mobile browser it expands into a full-screen app experience. You can navigate between screens, change filters, and edit sample transaction categories and notes.
+
 ## Features
 
 - Automatic transaction capture from supported bank SMS alerts
