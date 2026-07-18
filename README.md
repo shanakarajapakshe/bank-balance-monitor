@@ -101,3 +101,7 @@ app/src/main/AndroidManifest.xml            Permissions and Android components
 ## License
 
 Released under the [MIT License](LICENSE).
+
+## Author
+
+Designed and developed by **Shanaka Rajapakse**.
